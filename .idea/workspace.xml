@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd0df920-b42f-4cfe-a03e-d137578ac9d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/retry/example/utils/Retry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/retry/example/utils/RetryValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/retry/example/utils/validations/SimpleValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/retry/example/utils/validations/Validation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/retry/example/utils/validations/ValidationResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/retry/example/demo/utils/RetryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/retry/example/demo/utils/RetryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spring/retry/example/demo/utils/RetryTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +66,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RetryTest">
+  <component name="RunManager" selected="JUnit.All in retry-example">
+    <configuration name="All in retry-example" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="retry-example" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RetryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="retry-example" />
       <extension name="coverage">
@@ -97,6 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in retry-example" />
         <item itemvalue="JUnit.RetryTest" />
       </list>
     </recent_temporary>
@@ -112,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603023982616</updated>
       <workItem from="1603023984446" duration="3495000" />
-      <workItem from="1603069134692" duration="2692000" />
+      <workItem from="1603069134692" duration="3545000" />
     </task>
     <servers />
   </component>
