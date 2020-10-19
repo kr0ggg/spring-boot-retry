@@ -20,8 +20,9 @@ public class RetryTest {
 
         Assertions.assertThrows(Exception.class, () ->
             Retry.retry(() -> {
-                throw new Exception();
-            }, new IOException(), "error occurs"));
+                throw new Exception("oops");
+            }, new IOException(), "error occurs")
+        );
     }
 
     @Test
@@ -38,7 +39,7 @@ public class RetryTest {
 
         Assertions.assertThrows(Exception.class, () -> {
             String result = Retry.retry(() -> {
-                throw new Exception();
+                throw new Exception("oops");
             }, new IOException(), "error occurs");
         });
     }

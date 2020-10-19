@@ -1,13 +1,15 @@
 package com.spring.retry.example.utils;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.concurrent.Callable;
-import java.util.logging.Logger;
 
 public class Retry {
     private static final int RETRY = 3;
     private static final long DELAY = 1000l;
 
-    private static final Logger log = Logger.getLogger(Retry.class.getName());
+    private static Logger logger = LoggerFactory.getLogger(Retry.class);
 
     @FunctionalInterface
     public interface RunnableWithException {
@@ -33,7 +35,7 @@ public class Retry {
                 return callable.call();
             } catch (Exception e) {
                 counter++;
-//                log.error("retry " + counter + " / " + RETRY + ", " + message, e);
+                logger.error("retry " + counter + " / " + RETRY + ", " + message, e);
 
                 try {
                     Thread.sleep(DELAY);
